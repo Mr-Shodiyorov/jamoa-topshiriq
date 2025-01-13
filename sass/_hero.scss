@@ -1,31 +1,40 @@
-.info__inner{
-    width: 679px;
-    height: 454px;
-}
-
-.info__h1{
-    width: 679px;
-    height: 227px;      
-    list-style: none;   
-    color: black;
-    font-size: 89px;
-}
-
 .info{
-    background-image: url("./1.png");
-    background-repeat: no-repeat;
-    width: 1920px;
-    height: 875px;
+    color: white;
+    position: relative;
+    &::before{
+        content: "";
+        width: 1920px;
+        height: 875px;
+        top: -110px;
+        left: calc(50% - 950px);
+        z-index: -1;
+        position: absolute;
+        background-image: url(/man\ in\ bike.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:center;
+    }
+    margin-bottom: 82px;
 }
-
-.info__p{
-    width: 645px ;
-    font-size: 19px;
+.info_inner{
+    padding-top: 80px;
+    padding-bottom: 236px;
 }
-
-.info__link{
-    list-style: none;
+.info_title{
+    font-size: 84px;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-bottom: 48px;
+}
+.info_text{
+    font-size: 18px;
+    width: 645px;
+    margin-bottom: 56px;
+}
+.info_link{
     text-decoration: none;
-    background-color: orange;
-    color: black;
+    color: white;
+    padding: 16px 45.5px;
+    border-radius: 10px;
+    background-color: #F57520;
 }
